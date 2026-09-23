@@ -1,6 +1,6 @@
-export interface Usuario {
+export interface User {
     id: number;
     name:string;
     email:string;
-    activo: boolean;
+    active: boolean;
 }

@@ -1,5 +1,17 @@
-<h1>
-  {{imagen}}
-</h1>
-<p>{{tituloImagen}}</p>
-<img [src]="rutaImagenLocal" alt="Imagen de prueba" width="300" >
+<ion-header>
+ <ion-toolbar>
+<ion-title>Usuarios Activos</ion-title>
+ </ion-toolbar>
+</ion-header>
+<ion-content>
+
+ <ion-list >
+<ion-item *ngFor="let user of users">
+ <ion-label>
+  <img [src]="rutaImagenLocal" alt="Avatar" width="50" height="50">
+ <h2>{{ user.name }}</h2>
+ <p>{{ user.email }}</p>
+ </ion-label>
+</ion-item>
+ </ion-list>
+</ion-content>
